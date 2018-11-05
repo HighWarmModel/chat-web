@@ -1,0 +1,82 @@
+.avatar-selector
+  position relative
+  .bg-canvas
+    position absolute
+    width: 100%
+    height 300px
+    top 0
+    left 0
+  .avatar-selector-top
+    display flex
+    width 100%
+    justify-content center
+    align-items center
+    padding 0.3rem 0
+    .head-img
+      position relative
+      width 1.8rem
+      height 1.8rem
+      background-color #ffffff
+      border 0.08rem solid #108ee9
+      border-radius: 50%
+      font-size 0
+      overflow hidden
+      &::after
+        position absolute
+        content "换头像"
+        bottom 0
+        left 0
+        width 100%
+        height 0.4rem
+        line-height 0.4rem
+        text-align center
+        font-size 0.24rem
+        color #ffffff
+        background-color rgba(0,0,0,0.3)
+      img
+        max-width 100%
+        &::before
+          position absolute
+          // display block
+          top 50%
+          left 50%
+          transform translate(-50%, -50%)
+          font-size 2rem
+          white-space nowrap
+          color #ffffff
+          background-color #108ee9
+  .head-img-chose
+    position fixed
+    width 100%
+    box-sizing border-box
+    padding 0.2rem
+    top 0
+    left 0
+    z-index 10
+    .head-img-chose-container
+      border-radius 0.12rem
+      background-color #ffffff
+      overflow hidden
+      box-shadow 0 5px 15px rgba(0,0,0,.5)
+      .title
+        display flex
+        justify-content space-between
+        align-items center
+        padding 0.3rem 0.2rem
+        color #333333
+        font-size 0.3rem
+  .mark
+    position fixed
+    width 100%
+    height 100%
+    top 0
+    left 0
+    z-index 9
+    background-color rgba(0,0,0,0.4)
+  .avatar-selector-img-container
+    width 100%
+    box-sizing border-box
+    padding 0.2rem
+    img
+      max-width 100%
+      max-height 100%
